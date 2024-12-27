@@ -1,0 +1,100 @@
+/* Estilo general para el contenedor */
+.register-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del formulario */
+.register-container h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Estilo para el formulario */
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo de los campos del formulario */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Estilo para las etiquetas */
+.form-group label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Estilo para los inputs */
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #5c9dff;
+  outline: none;
+}
+
+/* Estilo para los campos invalidos */
+.form-group input.invalid {
+  border-color: #ff4d4d;
+}
+
+/* Estilo para los mensajes de error */
+.error-message {
+  color: #ff4d4d;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.error-message small {
+  display: block;
+}
+
+/* Estilo del botón de envío */
+button[type="submit"] {
+  padding: 10px;
+  background-color: #5c9dff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #4a8ed9;
+}
+
+button[type="submit"]:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Estilo del mensaje de error del servidor */
+.server-error {
+  color: #ff4d4d;
+  background-color: #ffe6e6;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 4px;
+  text-align: center;
+}
